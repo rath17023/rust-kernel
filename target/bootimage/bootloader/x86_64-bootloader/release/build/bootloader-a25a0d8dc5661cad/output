@@ -1,0 +1,7 @@
+cargo:rerun-if-changed=/home/wrathjen/projects/wcrt-rust-kernel/kernel/Cargo.toml
+cargo:rustc-link-search=native=/home/wrathjen/projects/wcrt-rust-kernel/kernel/target/bootimage/bootloader/x86_64-bootloader/release/build/bootloader-a25a0d8dc5661cad/out
+cargo:rustc-link-lib=static=kernel_bin-kernel-86bbe4a932ed2d31
+cargo:rerun-if-env-changed=KERNEL
+cargo:rerun-if-env-changed=KERNEL_MANIFEST
+cargo:rerun-if-changed=/home/wrathjen/projects/wcrt-rust-kernel/kernel/target/x86_64-wcrt_kernel/debug/deps/kernel-86bbe4a932ed2d31
+cargo:rerun-if-changed=build.rs
